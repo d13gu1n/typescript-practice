@@ -131,3 +131,44 @@ function arrayPowSumatory(arr: number[]): number {
 }
 
 console.log("Array Pow Sumatory ---> ", arrayPowSumatory(numbers));
+
+// Types annotation in Classes test
+class Rectangle {
+    width: number;
+    height: number;
+
+    constructor(width: number, height: number) {
+        this.width = width;
+        this.height = height;
+    }
+
+    area(): number {
+        return this.width * this.height;
+    }
+}
+const rect = new Rectangle(5, 10);
+console.log("Rectangle ---> ", rect);
+console.log("Rectangle Area ---> ", rect.area());
+
+// Type inference Test
+let guyAge = 25;
+let guyName = "John";
+
+console.log(`Age: ${guyAge}`);
+console.log(`Name: ${guyName}`);
+
+// Variable type inference Test
+let x = 10;
+console.log("X Type ---> " + typeof x);
+console.log("X ---> " + x);
+
+// Array type inference Test
+let fruits = ["Apple", "Banana", "Cherry"];
+console.log("Fruits Type ---> " + typeof fruits);
+console.log("Fruits ---> ", fruits);
+
+// Function return type inference Test
+function add(a: number, b: number) {
+    return a + b;
+}
+console.log("Adding two numbuhs ---> " + add(5, 10));
