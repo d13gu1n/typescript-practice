@@ -12,5 +12,5 @@ let country = "India";
 
 console.log("🚀 ~ name:", personName);
 console.log("🚀 ~ age:", age);
-console.log("🚀 ~ city:", city);
+// console.log("🚀 ~ city:", city);
 console.log("🚀 ~ country:", country);
