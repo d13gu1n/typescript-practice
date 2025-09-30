@@ -20,3 +20,7 @@ function createUser(username: string, age?: number, email?:string): string {
     }
     return userInfo;
 }
+
+console.log(createUser("john_doe"));
+console.log(createUser("jane_doe", 28));
+console.log(createUser("sam_smith", 30, "sam@example.com"));
