@@ -18,3 +18,24 @@ console.log("🚀 ~ typesCreated:", typesCreated);
 
 type typesCreated = typesArray.reduce((pv, nx) => `${pv} | ${nx}`);
 // Various errors, it's to be expected
+
+// Assigning non-existent variables in an Interface
+
+interface Bike {
+    make: string,
+    model: string,
+    year: number,
+    electric?: boolean
+}
+
+const testBike: Bike = {
+    make: "Kawasaki",
+    model: "H2R",
+    year: 2023,
+    electric: false,
+    horsepower: 200,
+    powerMeasurement: "HP"
+}
+
+console.log(testBike);
+console.log(`The ${testBike.year} ${testBike.make} ${testBike.model} has ${testBike.horsepower}${testBike.powerMeasurement}`);
