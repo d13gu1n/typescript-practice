@@ -63,3 +63,50 @@ const eotm2 = new EmployeeOfTheMonth("Lamar Davis", 35, "Repo Co-Leader", "Afric
 console.log(manager1);
 console.log("🚀 ~ eotm1:", eotm1)
 console.log("🚀 ~ eotm2:", eotm2)
+
+// Interface for an Object Test
+
+interface Product {
+    id: number;
+    name: string;
+    price: number
+}
+
+const product: Product = {
+    id: 1,
+    name: "Laptop",
+    price: 1200
+}
+
+console.log("This is a ---> ", product);
+
+// Interface with method signatures Test
+
+interface Calculator {
+    add(a: number, b: number): number;
+    subtract(a: number, b: number): number;
+}
+
+class SimpleCalculator implements Calculator {
+    add(a: number, b: number): number {
+        return a + b;
+    }
+
+    subtract(a: number, b: number): number {
+        return a - b;
+    }
+
+    multiply(a: number, b: number): number {
+        return a * b;
+    }
+    square(a: number): number {
+        return Math.pow(a, 2);
+    }
+}
+
+const calc = new SimpleCalculator();
+
+console.log("Addition ---> ", calc.add(5, 3));
+console.log("Subtraction ---> ", calc.subtract(9, 4));
+console.log("Multiply ---> ", calc.multiply(3, 3));
+console.log("Square ---> ", calc.square(9));
