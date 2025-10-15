@@ -126,3 +126,43 @@ class KeyValue<K, V> {
 
 const kvPair = new KeyValue("AD209KA12RFF5E55CSA#", "Soundcore WOOF 5701.RA");
 console.log(kvPair.returnKVPair());
+
+// Bounded Generic Class Test
+class Num<T extends number> {
+    private num: T;
+    constructor(num: T) {
+        this.num = num;
+    }
+    double(): number {
+        return this.num * 2;
+    }
+}
+
+const numbuh = new Num(25);
+console.log("Numbuh: ", numbuh.double());
+
+// Generic Class with Default Type Test
+class Default<T = string> {
+    private item: T;
+    constructor(item: T) {
+        this.item = item;
+    }
+    getItem(): T {
+        return this.item;
+    }
+}
+
+const computah = new Default("Laptop");
+console.log(`I have got a ${computah.getItem()}`);
+
+const sn = new Default(1);
+console.log("Cereal Number:", sn.getItem());
+
+// Recursive Generic Class Test
+class Processor<T = any> {
+    process(item: T): void {
+        console.log("Processing:", item);
+    }
+}
+const anuddaComputah = new Processor();
+anuddaComputah.process("/bin/sh/code");
