@@ -124,4 +124,5 @@ class KeyValue<K, V> {
     }
 }
 
-const kvPair = new KeyValue("AD209KA12RFF5E55CSA#", "Soundcore WOOF 5701.RA")
+const kvPair = new KeyValue("AD209KA12RFF5E55CSA#", "Soundcore WOOF 5701.RA");
+console.log(kvPair.returnKVPair());
