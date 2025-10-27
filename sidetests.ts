@@ -39,3 +39,18 @@ const testBike: Bike = {
 
 console.log(testBike);
 console.log(`The ${testBike.year} ${testBike.make} ${testBike.model} has ${testBike.horsepower}${testBike.powerMeasurement}`);
+
+class Box<T extends number> {
+    private value: T;
+
+    constructor(value: T) {
+        this.value = value;
+    }
+
+    double(): number {
+        return this.value * 2;
+    }
+}
+
+const failedBox = new Box("Hal");
+console.log("This will never run --->", failedBox.double());
