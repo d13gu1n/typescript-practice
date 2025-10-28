@@ -33,8 +33,8 @@ type ReadonlyUser = {
 };
 
 const user: ReadonlyUser = { id: 1, name: "Alice", email: "alice@example.com" };
-user.id = 2; // This will throw an error
-// console.log("🚀 ~ user:", user);
+// user.id = 2; This will throw an error
+console.log("🚀 ~ user:", user);
 
 // Nullable Properties test
 type Product = {

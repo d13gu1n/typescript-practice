@@ -54,3 +54,14 @@ class Box<T extends number> {
 
 const failedBox = new Box("Hal");
 console.log("This will never run --->", failedBox.double());
+
+const paths: string[] = ["users", "posts", "comments", "system", "home", "tap", "mnt"]
+
+let pipedPaths = paths.reduce((pv, nx) => {
+    return `${pv} | ${nx}`;
+});
+console.log("Piped paths ---> ", pipedPaths);
+
+type ArrayEndpoints = paths.reduce((pv, nx) => {
+    return `${pv} | ${nx}`;
+});
