@@ -39,3 +39,5 @@ interface User {
 type UserSummary = Pick<User, "name" | "email">;
 const userSummary: UserSummary = { name: "ram", email: "ram@example.com" };
 console.log("🚀 ~ userSummary:", userSummary);
+
+// TODO: Continue Utility Types Lesson -> https://www.geeksforgeeks.org/typescript/typescript-utility-types
