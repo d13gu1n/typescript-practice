@@ -1,15 +1,28 @@
 {
   "name": "typescript-practice-npm",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.2",
+  "description": "Practice App for TypeScript",
+  "keywords": [],
+  "homepage": "https://github.com/d13gu1n/typescript-practice#readme",
+  "bugs": {
+    "url": "https://github.com/d13gu1n/typescript-practice/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d13gu1n/typescript-practice.git"
+  },
+  "license": "ISC",
+  "author": "dacevedom",
+  "type": "commonjs",
   "main": "index.js",
+  "types": "./index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "typescript": "^5.9.2"
+    "@types/jest": "^30.0.0",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.5",
+    "typescript": "^5.9.3"
   }
 }
